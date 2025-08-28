@@ -1,0 +1,51 @@
+name: deploy
+
+on:
+  - push
+
+permissions:
+  id-token: write
+  pages: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+  
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: ocaml
+        uses: ocaml/setup-ocaml@v3
+        with:
+          ocaml-compiler: 5
+
+      # js_of_ocaml setup
+      - run: |
+          opam install js_of_ocaml
+          opam install js_of_ocaml-ppx
+
+      # install
+      - run: |
+          opam install . --deps-only
+          opam exec -- dune build bin/main.bc.js
+          mv _build/default/bin/main.bc.js public/index.js
+
+      - name: upload
+        uses: actions/upload-pages-artifact@v3
+        id: deployment
+        with:
+          path: public/
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: deploy page
+        id: deployment
+        uses: actions/deploy-pages@v4
