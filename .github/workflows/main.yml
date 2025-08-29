@@ -28,7 +28,7 @@ jobs:
       # install
       - run: |
           opam install . --deps-only
-          opam exec -- dune build bin/main.bc.js
+          opam exec -- dune build bin/main.bc.js --prof release
           mv _build/default/bin/main.bc.js public/index.js
 
       - name: upload
