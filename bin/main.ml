@@ -9,8 +9,8 @@ let set_footer () = use_elem "c" @@ fun x ->
         in
 
     x##.innerHTML := Js.string t
-    ;;
+;;
 
 let () = on_load @@ fun () ->
     set_footer ()
-    ;;
+;;

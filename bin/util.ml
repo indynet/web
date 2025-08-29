@@ -11,7 +11,7 @@ let use_elem id f =
     match Dom_html.getElementById_opt id with
     |   Some x -> f x
     |   None   -> ()
-    ;;
+;;
 
 (* use browser to get current year *)
 let curr_year = new%js Js.date_now##getFullYear ;;
