@@ -38,6 +38,8 @@ let set_mdivs () =
     ]
 
 let () = on_load @@ fun () ->
+    Random.self_init ();
+
     set_footer ();
     set_mdivs ();
 ;;
