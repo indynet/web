@@ -36,6 +36,7 @@ let set_mdivs () =
     ; "s2"
     ; "s3"
     ]
+;;
 
 let () = on_load @@ fun () ->
     Random.self_init ();

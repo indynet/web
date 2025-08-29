@@ -23,6 +23,7 @@
 :root {
     --glowyish: 1px 1px 0 #2e2e2e;
     --titleglow: 3.3px 2px 0 #2e2e2e;
+    --girly-red: #612135;
     --main-dark: black;
 }
 
@@ -123,10 +124,11 @@ a:hover {
 
 h1 {
     text-shadow: var(--glowyish);
+    color: var(--girly-red);
     font-family: ibm_conv;
 	font-display: swap;
     text-align: center;
-    color: #404566;
+    /* #404566; */
 }
 
 header h1 {
