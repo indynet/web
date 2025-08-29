@@ -13,6 +13,9 @@ let use_elem id f =
     |   None   -> ()
 ;;
 
+(* infallibly apply elements by their ids *)
+let iter_elems f = List.iter (fun x -> use_elem x f) ;;
+
 (* use browser to get current year *)
 let curr_year = new%js Js.date_now##getFullYear ;;
 
