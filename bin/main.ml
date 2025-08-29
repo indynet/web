@@ -13,7 +13,7 @@ let set_footer () = use_elem "c" @@ fun x ->
 ;;
 
 let set_mdivs () =
-    let rt = match Random.int 10 with
+    let rt () = match Random.int 10 with
     | 0 -> "^-^"
     | 1 -> "UwU"
     | 2 -> "=w="
@@ -28,7 +28,7 @@ let set_mdivs () =
     in
 
     let set_rt x =
-        x##.innerHTML := Js.string rt
+        x##.innerHTML := Js.string (rt ())
     in
 
     iter_elems set_rt
