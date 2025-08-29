@@ -1,5 +1,5 @@
 @font-face {
-    src: url("/assets/fonts/ibm_conv.woff") format("woff");
+    src: url("/fonts/ibm_conv.woff") format("woff");
     font-family: ibm_conv;
 	font-display: swap;
     font-style: normal;
@@ -7,14 +7,14 @@
 }
 
 @font-face {
-    src: url("/assets/fonts/mbyte.woff") format("woff");
+    src: url("/fonts/mbyte.woff") format("woff");
     font-family: mbyte_ega;
 	font-display: swap;
     font-weight: 200;
 }
 
 @font-face {
-    src: url("/assets/fonts/tandy.woff") format("woff");
+    src: url("/fonts/tandy.woff") format("woff");
 	font-display: swap;
     font-family: tandy;
     font-weight: 920;
