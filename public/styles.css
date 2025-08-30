@@ -102,6 +102,10 @@ footer {
     color: white;
 }
 
+.specil {
+    color: #FAA0A0;
+}
+
 a {
     transition: font-size 0.3s ease;
     text-decoration: none; 
