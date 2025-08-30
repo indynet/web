@@ -27,6 +27,15 @@
     --main-dark: black;
 }
 
+li::marker {
+    color: #FDFD96;
+    content: "★ ";
+}
+
+li {
+    margin-bottom: 10px;
+}
+
 .indyping {
     margin: 10px 10px 5px 5px;
     width: 65px;
@@ -83,9 +92,10 @@ html {
 }
 
 ul, ol {
-    list-style: none;
     padding: 0;
     margin: 0;
+
+    margin-left: 10px;
 }
 
 .cl ul {
@@ -153,6 +163,15 @@ h2 {
     font-family: ibm_conv;
 	font-display: swap;
     color: var(--girly-red);
+}
+
+h3 {
+    text-shadow: var(--glowyish);
+    font-family: ibm_conv;
+	font-display: swap;
+    color: var(--girly-red);
+    margin-bottom: 0;
+
 }
 
 body { 
