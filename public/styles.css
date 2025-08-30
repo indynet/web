@@ -27,6 +27,12 @@
     --main-dark: black;
 }
 
+.indyping {
+    margin: 10px 10px 5px 5px;
+    width: 65px;
+    float: left;
+}
+
 html {
     scroll-behavior: smooth;
     width: 100%;
@@ -180,7 +186,7 @@ main {
 }
 
 .pastel {
-    color: #9174ad;
+    color: #FDFD96;
 }
 
 #gallery button {
