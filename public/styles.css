@@ -189,6 +189,10 @@ main {
     color: #FDFD96;
 }
 
+.tl {
+    margin-left: 6px;
+}
+
 #gallery button {
     background-color: #141414;
     font-family: ibm_conv;
