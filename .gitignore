@@ -1,2 +1,5 @@
 public/index.js
+.direnv/
 _build/
+result/
+result
