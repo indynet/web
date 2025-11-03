@@ -217,6 +217,7 @@ main {
     font-family: mbyte_ega;
     margin-bottom: 10px;
     border-radius: 4px;
+    min-height: 60px;
     padding: 10px 15px;
     font-size: 15.459px;
     font-display: swap;
