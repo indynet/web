@@ -18,9 +18,9 @@
         packages.${system}.default = let
           headerC = header {} [ (h1 {} [ (pure "indycave.xyz") ]) ];
           headC   = head {} [
-            (link { rel = "shortcut icon"; type = "image/x-icon"; href = "/static/favicon.ico"; } [])
+            (link { defer = "true"; rel = "shortcut icon"; type = "image/x-icon"; href = "/static/favicon.ico"; } [])
+            (link { defer = "true"; href = "/static/styles.css"; rel = "stylesheet"; type = "text/css"; } [])
             (meta { content = "width=device-width, initial-scale=1"; name = "viewport"; } [])
-            (link { href = "/static/styles.css"; rel = "stylesheet"; type = "text/css"; } [])
             (title {} [ (pure "indycave.xyz") ])
           ];
 
@@ -47,7 +47,7 @@
             (body {}
               [ wasmC
                 headerC
-                (main { id = "content"; }
+                (div { id = "content"; }
                   [
                     (table {} [
                       (tbody {} [
