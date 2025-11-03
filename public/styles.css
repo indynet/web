@@ -164,6 +164,8 @@ h1 {
     font-family: ibm_conv;
     font-display: swap;
     text-align: center;
+    width: 385px;
+    height: 36px;
 }
 
 header h1 {
