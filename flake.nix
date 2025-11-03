@@ -108,7 +108,7 @@
 
                       (div { class = "box"; }
                         [
-                          (img { src = "/static/indynet.png"; class = "indyping"; } [])
+                          (img { height = "65"; width = "65"; src = "/static/indynet.png"; class = "indyping"; } [])
                           (p {} [ (pure "My name is Indy. I'm a silly human on the internet. I make cool stuff, sometimes.") ])
                           (p {} [ (pure "Here are some facts you may want to know,") ])
                           (ul { class = "cl"; }
@@ -177,7 +177,6 @@
                               (pure "The fastest way to contact me is through discord, in which my user is ")
                               (b {} [ (pure "indiegirls") ])
                               (br {} [])
-                              (br {} [])
                               (ul { class = "cl"; }
                                 [
                                   (li {}
@@ -198,7 +197,6 @@
                                       (a { href = "https://bsky.app/profile/indynet.bsky.social"; } [ (pure "Bsky") ])
                                     ])
                                 ])
-                              (br {} [])
                             ])
                         ])
                     ])
