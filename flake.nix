@@ -69,10 +69,26 @@
               ])
           ];
         in sweb.mkSweb {
-            name  = "indycave";
-            src   = self;
+            name       = "indycave";
+            src        = self;
 
-            index = {
+            pages.indy = {
+              html = doc (mainC
+                [
+                  (boxesC
+                    [
+                      (div { class = "box"; }
+                        [
+                          (span {} [ (pure "sorry, working on it!") ])
+                        ])
+                    ])
+                  linksC
+                ]);
+
+              main = ./src/Indy.hs;
+            };
+
+            index      = {
               static = [
                 ./public/indynet.png
                 ./public/favicon.ico
@@ -81,6 +97,8 @@
                 ./public/index.js
                 ./public/fonts
               ];
+
+              main   = ./src/Main.hs;
 
               html   = doc (mainC
                 [
@@ -211,8 +229,6 @@
 
                   linksC
                 ]);
-
-              main   = ./Main.hs;
             };
           };
       };
