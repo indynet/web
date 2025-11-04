@@ -77,6 +77,7 @@
                 ./public/indynet.png
                 ./public/favicon.ico
                 ./public/styles.css
+                ./public/robots.txt
                 ./public/index.js
                 ./public/fonts
               ];
