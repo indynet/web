@@ -44,7 +44,8 @@
               [ (h2 { id = "side-links"; } [ (pure "Links") ])
                 (ul { class = "links"; }
                   [
-                    (li {} [ (a { href = "/"; } [ (pure "Home") ]) ])
+                    (li {} [ (a { href = "/";     } [ (pure "Home") ]) ])
+                    (li {} [ (a { href = "/indy"; } [ (pure "Indy") ]) ])
                   ])
               ])
           ];
