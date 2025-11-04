@@ -21,9 +21,9 @@
             (link { defer = "true"; rel = "shortcut icon"; type = "image/x-icon"; href = "/static/favicon.ico"; } [])
             (link { defer = "true"; href = "/static/styles.css"; rel = "stylesheet"; type = "text/css"; } [])           
             (meta { content = "width=device-width, initial-scale=1"; name = "viewport"; } [])
-            (link { rel = "preload"; href = "/static/fonts/ibm_conv.woff"; as = "font"; } [])
-            (link { rel = "preload"; href = "/static/fonts/mbyte.woff"; as = "font"; } [])
-            (link { rel = "preload"; href = "/static/fonts/tandy.woff"; as = "font"; } [])
+            (link { rel = "preload"; href = "/static/fonts/ibm_conv.woff"; as = "font/woff"; } [])
+            (link { rel = "preload"; href = "/static/fonts/mbyte.woff"; as = "font/woff"; } [])
+            (link { rel = "preload"; href = "/static/fonts/tandy.woff"; as = "font/woff"; } [])
             (title {} [ (pure "indycave.xyz") ])
           ];
 
