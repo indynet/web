@@ -99,11 +99,11 @@
         "nixpkgs": "nixpkgs_3"
       },
       "locked": {
-        "lastModified": 1762196831,
-        "narHash": "sha256-xGwodnIQUXiBOdEJZWcG641rn9DfxMdwIIJW7qXS4js=",
+        "lastModified": 1762272320,
+        "narHash": "sha256-I/feIW2i6qAbarDI4gZgx3HJ0xWnZU/uDDL4otOsJuk=",
         "owner": "indynet",
         "repo": "sweb",
-        "rev": "3eb01eedd1e45af793c36754c1734453c0faf912",
+        "rev": "dff352b903e887850464e7522c019c65f50fd871",
         "type": "github"
       },
       "original": {
