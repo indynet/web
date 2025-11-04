@@ -95,12 +95,41 @@
 
                           (p {}
                             [
-                              (pure "I really do love the haskell programming language, it's pretty much my favorite thing even. Except maybe agda.")
+                              (pure "I really do love the haskell programming language, it's pretty much my favorite thing ever. Except maybe agda.")
                             ])
 
                           (p {}
                             [
                               (pure "I like hearing people yap, and I love making friends! My contacts are generally open, if you'd like to have a chat.")
+                            ])
+                        ])
+
+                      (div { class = "box"; }
+                        [
+                          (h2 {} [ (pure "Pronouns") ])
+                          (p {}
+                            [
+                              (pure "These are the pronouns that I identify myself with.")
+                            ])
+                          (ul {}
+                            [
+                              (li {} [ (pure "she/her") ])
+                              (li {} [ (pure "they/them") ])
+                            ])
+                        ])
+
+                      (div { class = "box"; }
+                        [
+                          (h2 {} [ (pure "Names") ])
+                          (p {}
+                            [
+                              (pure "These are valid identifiers that refer to myself")
+                            ])
+                          (ul {}
+                            [
+                              (li {} [ (pure "indy") ])
+                              (li {} [ (pure "indynet") ])
+                              (li {} [ (pure "indiegirls") ])
                             ])
                         ])
                     ])
