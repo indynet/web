@@ -24,7 +24,11 @@
             (link { crossorigin = "anonymous"; type = "font/woff"; rel = "preload"; href = "/static/fonts/ibm_conv.woff"; as = "font"; } [])
             (link { crossorigin = "anonymous"; type = "font/woff"; rel = "preload"; href = "/static/fonts/mbyte.woff"; as = "font"; } [])
             (link { crossorigin = "anonymous"; type = "font/woff"; rel = "preload"; href = "/static/fonts/tandy.woff"; as = "font"; } [])
+            (meta { name = "keywords"; content = "Haskell, Neocities, Small, Silly"; } [])
+            (meta { name = "description"; content = "silly website"; } [])
+            (meta { name = "author"; content = "indiegirls"; } [])
             (title {} [ (pure "indycave.xyz") ])
+            (meta { charset = "UTF-8"; } [])
           ];
 
           wasmC   = script {
@@ -111,7 +115,7 @@
 
                       (div { class = "box"; }
                         [
-                          (img { height = "65"; width = "65"; src = "/static/indynet.png"; class = "indyping"; } [])
+                          (img { alt = "OneShotNiko"; height = "65"; width = "65"; src = "/static/indynet.png"; class = "indyping"; } [])
                           (p {} [ (pure "My name is Indy. I'm a silly human on the internet. I make cool stuff, sometimes.") ])
                           (p {} [ (pure "Here are some facts you may want to know,") ])
                           (ul { class = "cl"; }
