@@ -80,7 +80,28 @@
                     [
                       (div { class = "box"; }
                         [
-                          (span {} [ (pure "sorry, working on it!") ])
+                          (h2 {} [ (pure "Me") ])
+                          (p {}
+                            [
+                              (pure "My name is indy, I'm ")
+                              (b {} [ (pure "17") ])
+                              (pure " years old, and I'm a self-taught programmer of eight years.")
+                            ])
+
+ (p {}
+                            [
+                              (pure "I spend my time, pretty much every day, all day, making things. I'm quite creative, and I take pride in my ability to create.")
+                            ])
+
+                          (p {}
+                            [
+                              (pure "I really do love the haskell programming language, it's pretty much my favorite thing even. Except maybe agda.")
+                            ])
+
+                          (p {}
+                            [
+                              (pure "I like hearing people yap, and I love making friends! My contacts are generally open, if you'd like to have a chat.")
+                            ])
                         ])
                     ])
                   linksC
